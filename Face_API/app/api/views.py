@@ -1,5 +1,6 @@
 from flask import make_response, jsonify
 from app.api import api
+<<<<<<< HEAD
 from app.models import User
 from flask import Flask, abort, request, jsonify, g, url_for
 from app.models import db,allowed_file
@@ -45,6 +46,9 @@ def user_reg():
     
 
 
+=======
+from app.models import getHomepageData
+>>>>>>> a760c1202b28c43f202531814db67f7fed8b5d0e
 
 @api.route('/v1.0/homePage/', methods=['GET', 'POST'])
 def homepage():
