@@ -1,9 +1,6 @@
 from app import db
 from flask import abort, json
-<<<<<<< HEAD
 from fileinput import filename
-=======
->>>>>>> a760c1202b28c43f202531814db67f7fed8b5d0e
 
 class User(db.Model):
     """
@@ -25,16 +22,12 @@ class User(db.Model):
             'faceURL':self.face
         }
         return json.dumps(json_blog)
-<<<<<<< HEAD
 
 
 ALLOWED_EXTENSIONS=set(['png','jpg','JPG','PNG','bmp'])
 def allowed_file(filename):
     return '.' in filename and filename.replit('.',1)[1] in ALLOWED_EXTENSIONS
 
-=======
-    
->>>>>>> a760c1202b28c43f202531814db67f7fed8b5d0e
 
 class Video(db.Model):
     """
